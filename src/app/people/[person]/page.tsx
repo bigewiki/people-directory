@@ -33,45 +33,33 @@ const Page = async ({
         </div>
         <table className="m-5">
           <tr>
-            <td className="p-1">
-              <p className="text-lg font-medium text-zinc-400">
-                {firstName} {lastName}
-              </p>
+            <td className="p-1 text-lg font-medium text-zinc-400">
+              {firstName} {lastName}
             </td>
           </tr>
           <tr>
             <td className="p-1">Age</td>
-            <td className="p-1">
-              <p className="text-sm text-gray-500">{age}</p>
-            </td>
+            <td className="p-1 text-sm text-gray-500">{age}</td>
           </tr>
           <tr>
             <td className="p-1">Address</td>
-            <td className="p-1">
-              <p className="text-sm text-gray-500">
-                {street.number} {street.name} <br /> {city} {state} {postcode}
-              </p>
+            <td className="p-1 text-sm text-gray-500">
+              {street.number} {street.name} <br /> {city} {state} {postcode}
             </td>
           </tr>
           <tr>
             <td className="p-1">Email</td>
-            <td className="p-1">
-              <p className="text-sm text-gray-500">{email}</p>
-            </td>
+            <td className="p-1 text-sm text-gray-500">{email}</td>
           </tr>
           <tr>
             <td className="p-1">Date of Birth</td>
-            <td className="p-1">
-              <p className="text-sm text-gray-500">
-                {formatDate(dobIsoString)}
-              </p>
+            <td className="p-1 text-sm text-gray-500">
+              {formatDate(dobIsoString)}
             </td>
           </tr>
           <tr>
             <td className="p-1">Phone Number</td>
-            <td className="p-1">
-              <p className="text-sm text-gray-500">{phone}</p>
-            </td>
+            <td className="p-1 text-sm text-gray-500">{phone}</td>
           </tr>
         </table>
       </div>
